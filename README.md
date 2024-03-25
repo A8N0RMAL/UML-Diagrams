@@ -42,5 +42,37 @@
 ![Timing Diagram](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/6bc8083c-34f3-4545-8f05-05878e053882)
 ![Timing Diagram1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/876b6bcf-1542-484c-9243-33e04b94ea22)
 
-  ---
-  
+---
+
+### Structural Diagrams
+#### 1. Class diagram :  
+- Describes the types of objects in the system and different kinds of static relationships that exist between them.
+- Three most important types of relationships in class diagrams 
+1. association -> which represents the relationships between instances of types (ex. A person works for a company or a company has multiple offices).
+2. inheritance -> which corresponds directly to inheritance in object oriented design.
+3. aggregation -> which is a form of object composition in object oriented design.
+
+#### 2. Object diagram:
+- An instance of class diagram, it shows a detailed snapshot of a system state at a particular point in time.
+- The difference is that the class diagram is an abstract model of classes and their relationships however the object diagram represents an instance at a specific moment which is concrete in nature(the use of obj. diagrams is rather limited namely to show examples of Data Structures).
+
+#### 3. Component diagram:
+- Illustrate how components are put together to form a larger components or software systems and illustrates the architecture of SW components and dependencies between them, these SW components can include runtime components, executable components and source code components.
+
+#### 4. Deployment diagram:
+- Helps to model the physical aspects of an OO SW system, this is a block diagram that shows the system architecture as deployment or distribution of SW artifacts, artifacts represent specific elements in the physical world that are the result of development process.
+- the diagram simulates the runtime configuration in a static view and visualize the distribution of the artifacts in the application, in most cases this involve simulating HW configurations along with the SW components that host them.
+
+#### 5. Package diagram:
+- It shows packages and dependencies between them, it allows us to display different views of the system(ex. it is easy to simulate a layered application).
+
+#### 6. Composite diagram:
+- It is similar to a class diagram, used mainly in micro level system modeling but it depicts individual parts instead of whole classes, it shows the internal structure of a class and interaction that the structure makes possible.
+- This diagram can include internal parts, ports through which the parts can communicate with each other or through which the class instances can communicate with various parts and with the outside world as well as connectors between parts and ports.
+- Composite structural diagram is a set of interrelated elements that interact at runtime to achieve a specific goal, each element has a dedicated role in this collaboration.
+
+#### 7. Profile diagram:
+-   Allows us to create domain and platform specific stereotypes and define relationships between them, we can create stereotypes by drawing shapes of stereotypes and linking them to composition or generalization through a resource oriented interface, we can also define and visualize stereotypes values.
+
+---
+
