@@ -83,3 +83,24 @@
 
 ---
 
+### Class Diagram
+#### Class Diagram:
+- Illustrates the structure of the system by describing classes, their attributes, methods and relationships between them.
+- Let's remind what is a class, in a nutshell class is a template for creating objects
+- (+ and - before the class attributes these are the access modifiers or class visibility notation).
+
+#### There are 3 different levels of specifications we can use:
+##### 1. Conceptual Perspective -> Is when class diagrams are interpreted as describing entities of the real world, in conceptual we can construct a diagram that represents the concepts in the domain, these concepts relate to classes that implement them, the conceptual perspective is considered language independent.
+##### 2. Specification Perspective -> Is when diagrams are interpreted as describing abstractions of SW or components with specification and interfaces but without any reference to specific implementation.
+##### 3. Implementation Perspective -> Is when diagrams are interpreted as a description of SW implementations in a particular technology or programming language.
+
+#### Relationships between classes in UML(6 main types of notation that are most common):
+##### 1. Association -> Similar to relationships connect objects, association connect classes.
+##### 2. Inheritance(Generalization) -> It is a schematic representation of the relationship between the parent class and its descendants.
+##### 3. Realization -> This refers to the relationships between an interface and objects that implement this interface.
+##### 4. Dependency -> When an object of one class uses and object of another class in its method and this object is not stored in any field, it is a special case of association of two classes, changes in one class will inexorably entail changes in the other.
+##### 5. Aggregation -> A special type between classes when one class is a composite part of another.
+##### 6. Composition -> Is a type of aggregation but this time classes that form the aggregator class are destroyed when the aggregator class is destroyed.
+
+---
+
