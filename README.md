@@ -104,3 +104,44 @@
 
 ---
 
+### Component Diagram
+Component Diagram:
+- Used for modelling physical aspects of object oriented systems that are used for visualizing, defining and documenting component-based systems as well as construction executable systems using forward and reverse engineering.
+
+- Component diagrams are essentially class diagrams that focus on system components that are often used to model the static implementation view of a system.
+
+- Component diagram breaks down the system under development into various high levels of functionality, each component is responsible for one clear goal within the entire system and interacts with other essential elements only on a need to know basis, so how does it work, data for example account and inspection id flows into the component through the port on the right and gets converted to a format that internal components can utilize interfaces on the right are known as required interfaces they represent the services the component needs to fulfill its responsibilities, data then passes through various connections and other components before it is output through the ports on the left.
+
+- Those interfaces on the left are also known as provided interfaces and other components of the system can interact with them in order to take advantage of the output results of the component it is important to note that the internal components are surrounded by a large box which can represent the system as a whole in that case there will be no component symbol in the upper right corner or a subsystem or component of the overall system in this case the box itself is a component.
+
+- A component is a modular part of a system that encapsulates its content, in UML 2.0 a component is drawn as a rectangle with optional compartments arranged vertically the following example shows two types of interface components.
+
+1. Provided interface is drawn with a complete circle at its end and represents the interface that the component provides to the system, this symbol is known by the nickname lollipop and is a shorthand for a realization relationship of an interface classifier.
+
+2. Required interface is indicated by a semicircle at the end and as you might guess it indicates the interface that a component needs to perform a task, in both cases the interface's name is placed next to the interface symbol.
+
+- Subsystem classifier is a special kind of a component classifier because of this the subsystem notation element inherits the same rules as the component notation element, the only difference is that the subsystem element is marked with the keyword subsystem instead of the keyword component.
+
+- ports are depicted with a square drawn along the edge of the system or a component, a port is mainly used to expose required and provided component interfaces.
+
+- Graphically a component diagram resembles a system of components and logical nodes connecting them, in general some relationships might already be familiar to you as they are widely used in the class diagram but there are some unique ones.
+
+1. Association -> defines the semantic relationship that can occur between typed instances, it is drawn as a straight line connecting two or more components of the system.
+
+2. Composition -> composite aggregation is a strong form of aggregation that requires a part instance to be included in at most one composite at a time, if a composite is deleted all its parts are usually deleted with it.
+
+3. Aggregation -> very similar to composition but in this case the child component can exist on its own even without being a part of the aggregator class, aggregation is drawn with a hollow diamond pointing towards the aggregator.
+
+4. Constraint -> A Condition or Restriction expressed as a text in a natural language or in a machine-readable language in order to declare some of the semantics of an element dependency, dependency is a relationship where an element or set of elements require other elements for their specification or implementation, this means that the full semantics of the dependent elements are either semantically or structurally dependent on the definition of the supplier element or elements.
+
+5. Inheritance or Generalization -> is a taxonomic relationship between a more general classifier and a more specific classifier, each instance of a specific classifier is also an indirect instance of the general classifier thus the specific classifier inherits the features of the more general classifier.
+
+Let's have a look at some use cases:(java.jpg and c++)
+- Consider a typical step-by-step process of modeling a source code that shows how we would approach creating a component diagram for a program, first of all with the help of forward or reverse engineering we determine the set of source code files of interest and model them as components for larger systems, we can use entire packages to display groups of files don't forget about tags that indicate the version of the source code file in use you can also specify its author or the date and time of the last change, we can also model the compilation dependencies between these files using dependencies.
+
+Let's have a look at a step-by-step process for modeling an executable release:(exe release)
+- First we define a set of components that we want to model typically this will include some or even all components that are on a single node or a distributed system of these sets of components across all nodes in the model it's worth considering the type of each component in this set for most systems there is only a small number of different kinds of components such as executable files libraries tables other files and documents we can also use UML extensibility mechanisms to provide visual cues for these types it is important not to forget to consider the relationship of each element in the system with its neighbours most often this will be associated with interfaces that are exported or realized by certain components and then imported or used by others but if we want our model to be at a higher level of abstraction then we can exclude these intermediate interfaces that hold such relations together showing only dependencies among the components themselves.
+
+Finally in modeling a physical database:(database.jpg)
+- First we identify the classes that will represent our logical database schema then we choose a mapping strategy for mapping these classes to tables, it is also worth taking into the physical distribution of our database because the mapping strategy will also be affected by the location in which you want to store data after the databases deployment. 
+To visualize, define, build and document our mapping we need to create a component diagram that will contain these components as tables.
