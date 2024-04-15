@@ -145,3 +145,103 @@ Let's have a look at a step-by-step process for modeling an executable release:(
 Finally in modeling a physical database:(database.jpg)
 - First we identify the classes that will represent our logical database schema then we choose a mapping strategy for mapping these classes to tables, it is also worth taking into the physical distribution of our database because the mapping strategy will also be affected by the location in which you want to store data after the databases deployment. 
 To visualize, define, build and document our mapping we need to create a component diagram that will contain these components as tables.
+
+---
+
+### Deployment Diagram
+- Deployment diagram illustrates the configuration of runtime processing nodes and the components that live on them.
+- Deployment diagram is a kind of a structural diagram used in modeling the physical aspects of an object-oriented system.
+- They're often used to simulate a static representation of a system deployment for example topology of the hardware.
+- Deployment diagrams show the structure of the runtime system they model the elements of physical hardware and the ways of communicating between them.
+- They can be used to plan a system architecture they can also be useful for documenting the deployment of software components or nodes.
+![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/7058c501-29b3-48c7-b2f7-10ec1a658653)
+
+- These diagrams are important for visualizing defining and documenting embedded client server and distributed systems as well as managing runtime systems through forward or reverse engineering.
+![2](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/e25a70de-7ae5-4e74-b2ce-ab93f2870402)
+
+- A deployment diagram is just a special kind of a class diagram that focuses on system nodes graphically deployment diagram looks like a collection of vertices and arcs.
+![3](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/47b204b3-8c55-40df-8a16-a19c96d8a282)
+
+- Deployment diagrams usually contain the following notation : a 3d box represents -> a node either software or hardware.
+![4](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/865b2672-64dc-4067-bd3b-a3c51ae3826b)
+
+- Hardware node -> may be marked with a stereotype notation.
+![5](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/3aa7ff13-247c-47e1-a7e7-29c55e55d283)
+
+- Connections between nodes are represented with a line with optional stereotype notation.
+![6](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/992ec5be-ace5-4605-bb6d-90129d256262)
+
+- Nodes can reside within other nodes the diagram can also reflect dependencies associations as well as nodes or restrictions.
+![7](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/01ae25ab-c575-4030-abf1-0a982f5bf9e8)
+
+#### These are the steps that are normally taken to model an embedded system :
+1. identify devices and nodes that are unique to your system.
+![8](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/cc9e5de8-4300-4a94-bf22-cb70bd97ea8f)
+
+2. Provide visual cues especially for unusual devices using uml extensibility mechanisms to identify system stereotypes with matching icons you will also want to distinguish between processes that contain software components and devices that at this level of abstraction do not directly contain software.
+![9](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/505bf2c1-a524-46f1-a530-385b1c6c41bf)
+
+3. Model the relationships between these processors and devices in a deployment diagram similarly specify the relationships between the components in the implementation view of your system and the nodes in the deployment view of your system.
+![10](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/c404c977-cb5d-4bad-a5f2-336a3af3f8a3)
+
+4. If necessary expand the capabilities of any smart devices by modeling their structure with a more detailed deployment scheme.
+![11](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/cd266cd8-3908-4afa-9381-8e809c7e03a3)
+
+#### Here are the steps for modeling a client server system :
+1. Identify the nodes that represent the client and server processors of your system.
+![12](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f00db202-e4c3-4385-bd42-184e48675bb4)
+
+2. Highlight those devices that are related to the behavior of your system for example you can simulate special devices such as credit card readers icon readers and display devices other than monitors since placement of the latter in the system's hardware topology is likely to be of a great architectural
+importance.
+![13](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/6cc0291f-ce3f-4ccc-b9bc-c6645e061718)
+
+3. Provide a visual cues for these processors and devices through stereotyping.
+![14](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f1c5a626-2fef-4999-9844-c50f4baabccb)
+
+4. Model the topology of these nodes in the deployment diagram similarly specify the relationships between the components in the implementation view of your system and the nodes in the deployment view of your system.
+![15](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/ca56155e-1cbd-4915-875d-524152a845fc)
+
+#### And here are the steps you will need to take when modeling a distributed system :
+
+1. Identify the devices and processors of the system as for simpler client server systems.
+![16](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/528f4a13-b655-434e-9a70-0b5082082738)
+
+2. If you need to reason about the network performance or the impact of changes on this network be sure to simulate communication devices at a level of detail that is sufficient to conduct these estimates, pay particular attention to logical groups of nodes that you can specify with packages. 
+![17](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/d019ec2f-4f71-441f-b9fa-cd1dc8df9399)
+
+3. Where possible use tools that discover the topology of your system by walking your system's network.
+![18](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/6a624c68-0cfd-49d0-8c47-aea28509312e)
+
+4. If you need to focus on the dynamics of your system use the use case diagram to indicate the types of behavior you're interested in and expand this use cases with interaction diagrams.
+![19](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/e8241fa7-e350-4ba3-84f2-ae76f17a3784)
+
+5. When modeling a fully distributed system it is common to transform or represent the network itself as a node that is the internet lan or one might be depicted as nodes in the form of a single box rather than a combination of elements.
+![20](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/60fb8913-42e0-4f4c-befc-8ffdb93f0455)
+
+#### When you develop a deployment plan for your company you might discover that you don't know where to start and what to focus on the following checklist can give you some ideas for planning your deployment:
+![21](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/ae620225-e618-4e17-af09-f869510a1bd0)
+
+- How will your system be installed?
+- Where the installation can possibly fail?
+- How long can it take to install your system?
+- What backups do you need before the installation?
+- Will data conversion be necessary?
+- How did you know that the installation was successful?
+- If different versions of the system work simultaneously, how will you resolve the conflicts?
+- What physical sites do you need to deploy and in what order?
+- How will you train your support and operational staff?
+- Will it be necessary to deploy a production support system so that support staff will use their own environment to model problems?
+- How will you train your users?
+- What documentation and in what formats and languages do your users, as well as support team and operation specialists need?
+- How will documentation updates be deployed?
+- What existing systems should the new system interact with or integrate?
+- How reliable should the system be, will any additional equipment be required in the event of a system failure?
+- What or who will connect or interact with the system, and how will they do it?
+- What software, including the operating systems, and communication protocols, will the system use?
+- What hardware and software will users interact directly with (PCs, network computers, browsers, etc.)?
+- How will you control the system after deployment?
+- How secure should the system be (does it need a firewall, physically safe equipment, etc.)?
+
+---
+
+### OBJECT Diagram
