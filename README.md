@@ -109,12 +109,32 @@
 ![Implementation Perspective](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/660dd836-9bee-4c8c-95f7-e97206625e1d)
 
 #### Relationships between classes in UML(6 main types of notation that are most common):
+![Relationships between classes in UML](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b7743b86-2278-4b9f-8376-bdc716c600f7)
+![Relationships between classes in UML 6](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b09696d9-ccc2-4f23-9588-3fd502f4467a)
+
 ##### 1. Association -> Similar to relationships connect objects, association connect classes.
+![Association](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f4864e85-a1ae-4312-852d-f5f1ebb468a3)
+
 ##### 2. Inheritance(Generalization) -> It is a schematic representation of the relationship between the parent class and its descendants.
+![Inheritance](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/64110977-3bed-4200-ba5e-0bd7730c73b6)
+![Inheritance_](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/93fdb852-d345-487e-aba9-30908722c232)
+
 ##### 3. Realization -> This refers to the relationships between an interface and objects that implement this interface.
+![Realization](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/edfc0347-6dd2-4f4e-8dd9-f1cf2a82556e)
+
 ##### 4. Dependency -> When an object of one class uses and object of another class in its method and this object is not stored in any field, it is a special case of association of two classes, changes in one class will inexorably entail changes in the other.
+![Dependency](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/ce24d0c6-d507-4ffd-bd34-3ac6a124b022)
+![Dependency_](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/1d004f9b-91b2-4690-bed4-bbea75166ab2)
+![Dependency__](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/c1fc5d7b-27b6-4c75-a09f-11a1906c5676)
+
 ##### 5. Aggregation -> A special type between classes when one class is a composite part of another.
+![Aggregation](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/87f514d6-2a14-4d34-88fb-3c17a6ebb1e0)
+![Aggregation_](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/096cbb35-f15b-47fa-863a-c00e3d2352e3)
+![Aggregation__](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f537a3c6-cf29-4925-a731-ead50f9d0e01)
+
 ##### 6. Composition -> Is a type of aggregation but this time classes that form the aggregator class are destroyed when the aggregator class is destroyed.
+![Composition](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/46e98d53-0932-4f87-bcef-1d13794245d0)
+![Composition_](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/315e6d0d-442b-4f8a-872d-4015ebd4c74a)
 
 ---
 
