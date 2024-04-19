@@ -91,6 +91,7 @@
 - (+ and - before the class attributes these are the access modifiers or class visibility notation).
 ![0](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b826b62e-e5c4-4b26-a76b-120490d60954)
 ![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/dd29e5ec-fc0c-4a89-b446-1337f4a48aec)
+![2](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a93c85f3-1bc4-4665-aa7d-37041df4959a)
 
 #### There are 3 different levels of specifications we can use:
 ##### 1. Conceptual Perspective -> Is when class diagrams are interpreted as describing entities of the real world, in conceptual we can construct a diagram that represents the concepts in the domain, these concepts relate to classes that implement them, the conceptual perspective is considered language independent.
