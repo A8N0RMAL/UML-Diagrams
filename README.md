@@ -101,6 +101,9 @@
 ![Conceptual Perspective_](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/aed8cc47-3876-499f-89f8-ab78061ef2c7)
 
 ##### 2. Specification Perspective -> Is when diagrams are interpreted as describing abstractions of SW or components with specification and interfaces but without any reference to specific implementation.
+![Specification Perspective](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/176bada4-23b6-49c5-a48a-bc175ac92849)
+![Specification Perspective_](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/cdfa8b73-976f-47c3-9f14-ce9ad35fcafb)
+
 ##### 3. Implementation Perspective -> Is when diagrams are interpreted as a description of SW implementations in a particular technology or programming language.
 
 #### Relationships between classes in UML(6 main types of notation that are most common):
