@@ -84,6 +84,7 @@
 ---
 
 ### Class Diagram
+![UML Class Diagram](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/de3446bb-5daf-4cd4-9c0d-97f24c5074f4)
 #### Class Diagram:
 - Illustrates the structure of the system by describing classes, their attributes, methods and relationships between them.
 - Let's remind what is a class, in a nutshell class is a template for creating objects
