@@ -93,6 +93,7 @@
 ![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/dd29e5ec-fc0c-4a89-b446-1337f4a48aec)
 ![2](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a93c85f3-1bc4-4665-aa7d-37041df4959a)
 ![3](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/2df7c342-3da2-4df8-ac32-be1ab9773217)
+![4](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/605d0fda-91ba-49d4-8ad5-2870e964d76b)
 
 #### There are 3 different levels of specifications we can use:
 ##### 1. Conceptual Perspective -> Is when class diagrams are interpreted as describing entities of the real world, in conceptual we can construct a diagram that represents the concepts in the domain, these concepts relate to classes that implement them, the conceptual perspective is considered language independent.
