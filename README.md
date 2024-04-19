@@ -97,6 +97,9 @@
 
 #### There are 3 different levels of specifications we can use:
 ##### 1. Conceptual Perspective -> Is when class diagrams are interpreted as describing entities of the real world, in conceptual we can construct a diagram that represents the concepts in the domain, these concepts relate to classes that implement them, the conceptual perspective is considered language independent.
+![Conceptual Perspective](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/68f0ef0e-de6f-42e4-b638-98b8d43d15e8)
+![Conceptual Perspective_](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/aed8cc47-3876-499f-89f8-ab78061ef2c7)
+
 ##### 2. Specification Perspective -> Is when diagrams are interpreted as describing abstractions of SW or components with specification and interfaces but without any reference to specific implementation.
 ##### 3. Implementation Perspective -> Is when diagrams are interpreted as a description of SW implementations in a particular technology or programming language.
 
