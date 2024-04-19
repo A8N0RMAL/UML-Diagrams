@@ -1,5 +1,7 @@
 # UML-Diagrams
 ## In this repo, I'll try to talk about UML diagrams
+![UML Diagrams](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a0a50764-a982-4c36-99aa-434ebda5e81f)
+
 ### Understanding UML, A Comprehensive Overview:
 - UML (Unified Modelling Language) is an essential tool for software developers, offering a standardized set of diagrams to visualize, design, and document software systems. It provides a common notation for communicating complex system designs, aiding in collaboration and validation of architectural decisions. UML encompasses a variety of diagram types, including both structural and behavioural representations, each serving specific modelling purposes. Structural diagrams like class diagrams, component diagrams, and deployment diagrams focus on system architecture and physical aspects, while behavioural diagrams such as use case diagrams and sequence diagrams capture system functionalities and interactions. Understanding UML and its various diagram types is crucial for effective system modelling and software development.
 ![UML](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/d5a2b7a2-6daa-4660-9ab0-3dea3e3564c4)
@@ -139,6 +141,7 @@
 ---
 
 ### Component Diagram
+
 Component Diagram:
 - Used for modelling physical aspects of object oriented systems that are used for visualizing, defining and documenting component-based systems as well as construction executable systems using forward and reverse engineering.
 
@@ -183,6 +186,8 @@ To visualize, define, build and document our mapping we need to create a compone
 ---
 
 ### Deployment Diagram
+![Deployment Diagram](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/c655713e-5d41-4490-bdb9-d2cbc322e1c7)
+
 - Deployment diagram illustrates the configuration of runtime processing nodes and the components that live on them.
 - Deployment diagram is a kind of a structural diagram used in modeling the physical aspects of an object-oriented system.
 - They're often used to simulate a static representation of a system deployment for example topology of the hardware.
