@@ -284,3 +284,87 @@ importance.
 ---
 
 ### OBJECT Diagram
+![UML Object Diagram](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/d6ab9c8d-3e9e-4f96-bb54-0335eb0a6731)
+
+- Uml objectn diagram is an instance of a class diagram.
+- It captures a snapshot of the detailed state of the system objects and their relationship at a specific pointin time. 
+- It can be considered as a special case of a class diagram or a communication diagram.
+- The use of the object diagrams is quite limited and mainly comes down to demonstrating examples of data structures.
+- During the project analysis phase you can create a class diagram to describe the structure of the system and then create a set of object diagrams as test cases to verify the accuracy and completeness of the class diagram. 
+![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/c8569288-47c5-4fad-bb9d-def0d85d28f5)
+---
+- Prior to creating a class diagram you can create an object diagram to find out facts about specific model elements and their relationships or to illustrate specific examples of the required classifiers.
+![2](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/6d31d46a-2c13-4f9d-95ea-2fc058b81c62)
+ ---
+- The object diagram illustrates the relation between the instantiated classes and the defined class as well as the relationship between the objects in the model system at a fixed point in time.
+- It's fair to say that it's a snapshot of your system at a certain point in time which will depict system objects in a certain state which will directly represent real instances and prototypes these diagrams are useful for example when you want to depict a small part of a large system.
+- In which case the use of a class diagram would be an overkill as well as in case you want to model recursive relationships or to study the behavior of a system at a particular moment in time.
+![3](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a7605d52-ace2-40fb-a9e9-36d4744ecf4e)
+---
+- The best way to show what an object diagram looks like is to show an object diagram derived from the corresponding class diagram. 
+- This humble class diagram illustrates a simple example in which a department depicted consisting of many other departments and this object diagram is nothing more than a detailed representation of the previous class diagram with examples and links.
+![4](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/e5f57cdd-7d32-4db9-9c61-1981efc14e9e)
+![5](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4ffb3492-4e51-44ac-b67d-fc30b0af45a1)
+---
+- Let's walk through the basic notation of an object diagram. 
+- Each object is drawn as a rectangle.
+- The name of the object and its class are usually underlined and separated with a column.
+- The name of the object is on the left the name of the class is on the right.
+![6](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/d51e5e7f-9377-4913-a9d0-0061f162aa57)
+---
+- The attributes of an object are listed in a separate compartment under the name of the class or object and must indicate the values assigned to them.
+![7](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/392cc191-990e-4c0d-98b5-968c331c2cb3)
+---
+- Links in general are varieties of associations betweenclasses and are discussed in detail above about class diagrams.
+ ![8](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/27170998-96c8-4e38-964d-28b98e560419)
+---
+ - Since uml object diagrams provide a snapshot of instances and the relationships between them in the system.
+ - We can create object diagrams by instantiating the model elements on class diagrams, deployment diagrams, components and use case diagrams. 
+![9](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b8af5900-df17-4dac-b420-312467f277ad)
+---
+- For example we can represent a part of the company's structure with the object diagram. 
+- A communication diagram without any messages can also be called an object diagram and relationships between objects can be called links.
+![10](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/53b8d679-31a0-4eea-8dd2-05328922ee8a)
+---
+ - An object diagram must be a valid instance of a static class diagram.
+ - Objects must have classes and relationships between objects must be the instances of associations between classes, that is relationships between objects will essentially be similar to relationships between classes.
+![11](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/9ded606e-e8d0-4a69-a4a3-0fa91a09ce0c)
+---
+- Let's look at some steps for modeling object structures.
+- First of all define the mechanism that you would like to model this mechanism can represent some function or behavior of the part of the system that you are modeling which is basically the result of the interactions between classes interfaces and other elements, therefore it is necessary to identify the classes interfaces and elements for each mechanism that participate in this model and determine the relationships between them.
+![12](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/ef6c12a5-4014-4934-8979-607a10003b90)
+---
+- After that consider for example one scenario that walks through this mechanism and at a certain point in time  renders each object that participates in the mechanism, expand the state and attribute values of each such object to understand this scenario.
+![13](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/70c2f477-4406-4501-bf5b-134a5e0f426c)
+---
+- A kind of analogy would be the mechanical clocks imagine it is noon and we pretend to freeze the time to examine the elements of the mechanism, what do they do where do the hour and minute, hands point to which gears and sprockets are involved and so on.
+![14](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4f8d515b-d3c9-4d5b-b983-b9b4a7ae78d9)
+---
+- let's have a look at another example robot moving behavior.
+![15](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/6cd36d74-8773-4e53-b5e6-a1e20aa8458a)
+---
+- here one object represents the robot itself r is an instance of a robot and r is currently in a state marked moving this object has a link to w.
+![16](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/1191effc-ec4b-419c-8325-f9e6859157cd)
+---
+- W is an instance of the world which is an abstraction of a model of the world for the robot this object is linked with several objects consisting of instances of the element that represents entities that the robot has identified but has not yet assigned in its world view. 
+![17](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/58a85cf7-b4b7-484d-bfcd-dc57a5ce0abc)
+---
+- These elements are marked as part of the global state of the robot. 
+![18](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/ed87c3e0-258d-4e18-8bc5-e9ce0e199d05)
+---
+- Currently w is associated with two instances of area.
+![19](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4775f7ea-32fc-464e-99ef-d2918f6a9bee)
+---
+- One of them a2 is shown with its own links to the three wall objects and one door object. 
+![20](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/8a6d7e30-1d4e-4d24-9f42-02c8ea057df9)
+---
+- Each of these walls has an attribute width and each wall is linked with neighboring walls. 
+- By and large this diagram graphically shows how the robot recognizes this enclosed area which has walls on three sides and a door on the fourth.
+![21](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/cb6c3d20-1c42-4523-8178-01ee7ecb25da)
+---
+- The next example is deriving an object structure similar to communication diagram, in addition to displaying the state of objects at a certain point in time, an object diagram can also be used for example to represent the occurrences of interactions between classes during the runtime.
+![22](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/bee21b7b-c20c-437c-9acf-f68a9fb04f6b)
+
+---
+
+### PACKAGE Diagram
