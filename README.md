@@ -422,7 +422,7 @@ importance.
 ---
 - In uml public protected and private visibilities correspond to a class that is a public, protected or private.
 - A public element is visible to all elements that can access the content of the namespace to which it belongs.
-- Public visibility is represented by the plussign.
+- Public visibility is represented by the plus sign.
 - A protected element is visible to elements related to generalization relationship to the namespace that owns it.
 - Protected visibility is represented by the hash sign.
 - A package element is owned by a namespace that is not a package and is visible to all elements that are in the same package.
@@ -448,7 +448,7 @@ importance.
 - Usually this is the relationship between models not elements.
 ![17](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/ed8f5f83-8d4a-46ed-a10f-fa85d06e26fb)
 ---
-- Public elements of the supplier package are combined emerge with the client package elements.
+- Public elements of the supplier package are combined merge with the client package elements.
 ![18](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/aef63ef7-1cb9-4295-8a4d-0f1ab27a7b0c)
 ---
 - The dependency is used only in metamodeling and the chance of encountering it in the modern object oriented analysis and design is even less than encountering an elephant in the central london.
