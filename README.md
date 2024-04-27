@@ -368,3 +368,109 @@ importance.
 ---
 
 ### PACKAGE Diagram
+![UML Package Diagram](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/33af2f63-7645-4977-a921-79bdf0ac2f10)
+- Uml package diagram is a kind of a structural diagram that shows the location and organization of model elements in a medium scale and large scale projects.
+- A package diagram can display both this structure and the dependencies between subsystems or modules illustrating various kinds of systems such as a layered application for example.
+![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/100c9955-f68f-4c17-bd0d-5d16d1f57f1b)
+---
+- If the system is of a significant size it should be divided into smaller subsystems, each with its own class diagram.
+- In uml notation these partitions or subsystems are called packages.
+- A package is a group of elements of the model and it can also be used in other uml diagrams.
+- Packages themselves can be nested in other packages which is basically a uml version of folders.
+![2](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/60a9f0ae-aef4-41bf-ab09-dd906a6fdc91)
+---
+- Package diagrams are usually used when it is necessary to group a related uml elements and determine the scope of their names or when you need to provide a way to visualize dependencies between parts of the system. as well as to provide some support for analysis or determine the compilation order.
+- Package diagrams are used to structure high-level system elements.
+![3](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/8f2e8918-896c-4536-b30a-adcc4b8be8d9)
+---
+- When modeling a package diagram you should bear in mind that a package is a uml mechanism for grouping elements including other packages.
+![4](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/3dc49178-3910-4bc9-b5ea-aea02530c66b)
+---
+- Each package has its own namespace in which all names must be unique.
+![5](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/55172756-750f-4be2-a1fe-88e6f294dec1)
+---
+- Each model element belongs to a single package.
+![6](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/c4a780b8-ce7e-4a4e-a744-895a892ff410)
+---
+- Packages form a hierarchy, packages are displayed as rectangles with small tabs at the top.
+- Package's name is normally written on its tab or dedicated rectangle namespace.
+![7](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4b00b9ea-a79f-43d0-8338-451437b9b21d)
+---
+- Dotted lines with arrows depict dependencies.
+- One package is said to be dependent on another if changes in that other package can cause changes in the first one as well.
+![8](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/85f14807-6358-4731-9106-7b12b8045e9a)
+---
+- A system could be depicted in the form of a package with the stereotype system and it represents all the elements of the model that are relevant to a particular project.
+- You can also break the system apart into business systems and application systems when creating more detailed models to make them smaller but more efficient.
+- Package diagram can also display the logical architecture of a system.
+![9](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b7a92e35-7500-4f4e-9309-c1097a689e6e)
+---
+- A subsystem is a group of model elements that are part of some larger system.
+- Since the system or subsystem is a stereotypical package it has all the properties of the package and it also follows the rules of the package and all those model elements that are contained inside the system or the subsystem will also belong to the package and follow the same rules.
+![10](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/8b9ce8d9-c36b-4c4f-98de-c46dbebe81b5)
+---
+#### Now what does this word stereotype actually mean: 
+- stereotype is a high level classification of an object that gives some idea of what the object is.
+- Classes can be grouped by stereotypes their names are written inside the angle brackets above the class name.
+- Stereotype allows us to extend uml to fit our modeling needs more specifically.
+- In other words stereotyping a uml element makes it act as something that has specific properties.
+![11](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/944d6cb0-d96d-43a2-b656-25186a5cdd51)
+---
+- Elements in packages may also have different visibility of elements of other packages and this also needs to be taken into the count during the process of modeling of a system.
+- Elements of a package with public visibility are available outside the package, while elements with private visibility are available only for other elements within the package.
+![12](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/5db7fb6b-024f-4f84-9e0c-415fa95f00d8)
+---
+- In uml public protected and private visibilities correspond to a class that is a public, protected or private.
+- A public element is visible to all elements that can access the content of the namespace to which it belongs.
+- Public visibility is represented by the plussign.
+- A protected element is visible to elements related to generalization relationship to the namespace that owns it.
+- Protected visibility is represented by the hash sign.
+- A package element is owned by a namespace that is not a package and is visible to all elements that are in the same package.
+- Package visibility is marked by a tilde.
+- A private element is visible only inside the namespace that owns it.
+- Private visibility is represented by the minus sign.
+![13](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/eff0e42a-153b-47db-af3f-4681bcef3d2b)
+---
+#### Let's look at the types of dependency relationships represented by the stereotypes: 
+- The element in the client package uses the public element in the supplier package the client depends on the supplier.
+- If the package dependency is shown without a stereotype then it should be marked with a use stereotype.
+![14](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/00c2b3cf-45ef-4e10-8a68-c200c4898e04)
+---
+- Public elements of the supplier namespace are added as public elements to the client namespace.
+- Elements in the client's namespace can access all public elements in the supplier namespace using unqualified names.
+![15](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/d10f846d-23bc-45b4-834d-3250a3cd0874)
+---
+- Public supplier namespace elements are added as private elements to the client namespace.
+- Elements in the client namespace can access all public elements in the supplier namespace using unqualified names.
+![16](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/03e99452-5925-4986-bdba-ad9325e50ad8)
+---
+- Trace normally represents a historical development of one element into another more developed version.
+- Usually this is the relationship between models not elements.
+![17](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/ed8f5f83-8d4a-46ed-a10f-fa85d06e26fb)
+---
+- Public elements of the supplier package are combined emerge with the client package elements.
+![18](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/aef63ef7-1cb9-4295-8a4d-0f1ab27a7b0c)
+---
+- The dependency is used only in metamodeling and the chance of encountering it in the modern object oriented analysis and design is even less than encountering an elephant in the central london.
+![19](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4dd6c4c9-0851-4e1d-80ef-a1865892b5e5)
+---
+- Next we will analyze an example diagram of the order tracking scenario for an online store:
+![20](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/d9f035a9-4afe-491f-be28-3c8a7105bd89)
+---
+- In this diagram the track order module is responsible for providing tracking information for product ordered by our customers.
+- The types of customers are encrypted inside the tracking number.
+- Truck order module refers to the system and updates the current delivery status for the customer.
+![21](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/9d41b3e5-ec28-4d72-ae22-8769ad6c3cd6)
+---
+- Based on the description of the project first we must determine what packages will be present in the system and figure out the relationships between them.
+#### So how to determine which packages do we need to model the system:
+- Suppose that we have a module that tracks an order it could be some sort of a tracking module and in order to perform its duty it must communicate with another module in order to figure out the details of the order.
+- Let's call this module order details. after receiving the details of the order it needs to know the shipping details, so let's introduce a shipping module.
+- And now let's determine the dependencies between them.
+- The track order module must receive the order details from the order details module.
+- In response order details module requires to know the information provided by the client.
+- Two modules communicate with each other which provides the access dual dependency.
+- To learn the shipping information the shipping module can import the truck or the module to make the navigation easier.
+- Finally the truck order is dependent on the ui framework and this completes our order processing subsystem design.
+![22](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/693ef202-240a-408b-82d9-e2c9ddf2e24b)
+---
