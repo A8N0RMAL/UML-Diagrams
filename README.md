@@ -474,3 +474,4 @@ importance.
 - Finally the truck order is dependent on the ui framework and this completes our order processing subsystem design.
 ![22](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/693ef202-240a-408b-82d9-e2c9ddf2e24b)
 ---
+### COMPOSITE Diagram
