@@ -554,7 +554,7 @@ importance.
 - A connector defines the relationships between the objects or instances that are associated with the roles in the same structured classifier and define the communication between those roles.
 ![18](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b5e4c6ac-dc7f-4a07-a753-bb8151c19fb4)
 ---
-- As an example here's a simplified composite structured diagram for a computer system which includes the following components power supply unit, hard disk, dvd motherboard, central processing unit and memory module.
+- As an example here's a simplified composite structured diagram for a computer system which includes the following components power supply unit, hard disk, dvd, motherboard, central processing unit and memory module.
 ![19](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/fa36aa15-f2f9-4aea-8777-cbfe95925427)
 ![20](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/00a0d01f-ba36-4d15-b616-8243b8b16414)
 ---
