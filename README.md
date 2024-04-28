@@ -480,7 +480,8 @@ importance.
 ---
 - Composite structure diagram contains classes interfaces packages and their relationships and it provides a logical representation of a software system or its part.
 - This diagram is one of the new artifacts added in uml 2.0 and it shows the internal structure including parts and connectors of a structured classifier or collaboration.
-- The composite structure diagram plays a role similar to the class diagram but allows you to delve into details of the internal structure of multiple classes and show the interactions between them. you can graphically represent inner classes and parts and show associations both between classes and within them.
+- The composite structure diagram plays a role similar to the class diagram but allows you to delve into details of the internal structure of multiple classes and show the interactions between them.
+- You can graphically represent inner classes and parts and show associations both between classes and within them.
 ![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/36527a2a-1632-4ee3-88f1-05265a02085e)
 ---
 - In other words composite structure diagrams show the internal parts of a class.
