@@ -1,4 +1,4 @@
-# UML-Diagrams
+![13](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/784ce872-a60e-41e5-9fcf-7cd16395065e)![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b66b4e76-bc22-464e-873b-8eef5134c667)# UML-Diagrams
 ## In this repo, I'll try to talk about UML diagrams
 ![UML Diagrams](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a0a50764-a982-4c36-99aa-434ebda5e81f)
 
@@ -475,3 +475,86 @@ importance.
 ![22](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/693ef202-240a-408b-82d9-e2c9ddf2e24b)
 ---
 ### COMPOSITE Diagram
+![UML Composite Diagram](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a06376f7-bccc-4c53-b711-b0a5962b536c)
+
+---
+- Composite structure diagram contains classes interfaces packages and their relationships and it provides a logical representation of a software system or its part.
+- This diagram is one of the new artifacts added in uml 2.0 and it shows the internal structure including parts and connectors of a structured classifier or collaboration.
+- The composite structure diagram plays a role similar to the class diagram but allows you to delve into details of the internal structure of multiple classes and show the interactions between them. you can graphically represent inner classes and parts and show associations both between classes and within them.
+![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/36527a2a-1632-4ee3-88f1-05265a02085e)
+---
+- In other words composite structure diagrams show the internal parts of a class.
+- The part's name is usually constructed with parts name then column then parts type with multiplicity stated inside the square brackets.
+- Aggregated classes are parts of a class but parts are not necessarily classes.
+- A part is any element that is used to make up the containing class.
+![2](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/3f870632-7ab3-4916-a5ed-f3910779b642)
+---
+- Suppose we are modeling a system for an online store in which customers can join a loyalty program that provides them with some benefits discounted shipping for example.
+- In order to allow such a feature we expanded the customer object so now we have a regular customer and a member of our loyalty program.
+![3](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/745c2257-5ccf-4873-9d43-3fbc5d9772f9)
+---
+- let's start by simulating an online store using a class diagram.
+- We have a class for item which can be aggregated by the order class which is composed by the customer class which itself is composed by the store manager class.
+- we have many objects that end up within other objects. 
+- On the diagram everything looks as if it ends up inside the store manager, so we can create a composite structure diagram to clearly demonstrate what this manager consists of.
+![4](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/15d20440-e673-46e7-924c-1b22f875e0a6)
+---
+- Composite structure diagram shows us a clear picture of the store manager from its own point of view instead of this system as a whole.
+![5](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/572a2aaa-5938-41c0-9d5f-a2eade24ee47)
+---
+- Store manager directly contains two types of objects customer and item as indicated by th two composition arrows in the class diagram.
+- The composite structure diagram here shows the inclusion of customer subtypes explicitly.
+- Please note that the type of both parts is declared as customer because the store treats both objects as customer objects.
+![6](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/9a03f7aa-0914-441d-a214-2828bee7b354)
+---
+- We also see a connector that shows the relationship between item and order.
+![7](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f99f7507-1c7b-43a7-bce7-df7469b277b3)
+---
+- Order is not contained directly in the store manager class, but we can show relationships with parts nested in the object that it aggregates.
+![8](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f908db7e-4d4d-4c46-b262-e40b890f8e7e)
+---
+- The question is do these two diagrams essentially describe the same thing or have the same meaning?
+![9](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/22bd1f40-908b-48e1-a012-6d91469962a0)
+---
+- Well in the class diagram the relationship between the description and pricing is ambiguous strictly speaking there are not exactly the same.
+- The class diagram shows that description will have a reference to the pricing object, but this does not specify whether the link between the two objects is contained inside the item explicitly.
+![10](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/6df43adc-d6d2-4a2e-8aa5-2a645e6bac32)
+---
+- If we use a composite structure diagram the relationship between the description and pricing objects becomes obvious, specific implementations of an object's activity can be clearly modeled.
+![11](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/306015a8-cab0-4d1c-8199-ea4e7546ad96)
+---
+- Composite structure diagrams are good for describing aggregation, but in this case models will also need to contain references to objects outside the class that we are modeling.
+![12](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/665b7842-83a5-4666-90dd-7b6045277c64)
+---
+- References to external objects are shown with a dashed rectangle, even if they refer to an object outside the class the link itself is inside the model class and it is an important step in demonstrating its implementation.
+![13](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/8032220f-12f7-45fd-a9c5-504a111ac2a0)
+---
+- The key object of composite structure specified in the uml 2.0 are structured classifiers parts, ports, connectors and collaborations.
+- Collaboration describes the structure of collaborating parts and their roles in the interaction and is used when we want to determine only those roles and connections that are necessary to achieve a specific goal of such collaboration, for example the purpose of a collaboration may be to define the roles of components of a classifier.
+- Having identified the main roles the collaboration simplifies the structure and clarifies the behavior of elements in the model itself.  
+- In this example the wheels and the engine are parts of the collaboration and front axle and rear axle are connectors.
+- A car is a composite structure that shows parts and connections between parts.
+![14](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/e1e8c061-3ae3-4783-9f96-355f087fa446)
+---
+- A part is a diagram element that represents a set of one or more instances owned by a structured classifier.
+- A part describes the role of the instance in the classifier.
+- We can create parts in the structure compartment of the classifier and in several uml diagrams such as composite structure diagram, class diagram object diagram, component diagram, deployment diagram and package diagram.
+![15](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/e3302527-433c-48fa-a54b-f18208da9375)
+---
+- A port defines the point of interaction between the classifier instance and its environment or between the behavior of the classifier and its internal parts.
+![16](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4bf2edd1-9d61-411c-a07a-8ee58c781dfe)
+---
+- Composite structure diagram supports the notation for provided and required interfaces.
+- If necessary interfaces can be shown or hidden in the diagram.
+![17](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f88b0cc4-5b62-4177-aba1-3aa287523172)
+---
+- A line that represents the relationships within the model is called a connector.
+- when modeling the internal structure of a classifier we can use a connector to indicate a link between two or more instances of a part or a port.
+- A connector defines the relationships between the objects or instances that are associated with the roles in the same structured classifier and define the communication between those roles.
+![18](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b5e4c6ac-dc7f-4a07-a753-bb8151c19fb4)
+---
+- As an example here's a simplified composite structured diagram for a computer system which includes the following components power supply unit, hard disk, dvd motherboard, central processing unit and memory module.
+![19](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/fa36aa15-f2f9-4aea-8777-cbfe95925427)
+![20](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/00a0d01f-ba36-4d15-b616-8243b8b16414)
+---
+### PROFILE Diagram
