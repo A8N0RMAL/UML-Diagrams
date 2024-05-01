@@ -559,3 +559,78 @@ importance.
 ![20](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/00a0d01f-ba36-4d15-b616-8243b8b16414)
 ---
 ### PROFILE Diagram
+![UML Profile Diagram](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/dce43077-45ed-4265-9dba-438abe45d55c)
+
+---
+- Profile diagram is one of the uml structural diagrams it is well known for providing a general extension mechanism for customizing uml models for specific domains and platforms.
+- Profiles are defined using stereotypes tag value definitions and constraints that apply to specific elements of the model, such as classes, attributes, operations and actions.
+- A profile is a set of extensions that jointly configure uml for a specific domain for example aerospace medical or financial or specific platforms such as j2ee or .net .
+![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b400ee0b-39db-4b29-9c5a-ba1c07a14a21)
+
+---
+- Profile diagrams have three major types of extension mechanisms stereotypes, tags and constraints.
+![2](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/3c6f79a7-8486-4d82-83a7-3349f8d47291)
+
+---
+- Stereotypes allow us to increase the vocabulary of uml you can add and create new model elements derive from the existing ones but having more specific properties that are suitable for a specific domain.
+- Stereotypes are used to introduce new building blocks that speak the language of your domain and look primitive, this allows you to introduce new graphical symbols.
+- For example when modelling a network you may need annotation for router, switch, hub etc..., a stereotype allows you to make these things appear as primitive as possible.
+![3](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4013ff80-eb98-41dc-829c-c8ca8ba4a75c)
+
+---
+- Why would you need that?
+- For example a box labeled with a stereotype button makes more sense than a picture of green rooster that was added to the schema just because someone ran out of meaningful symbols.
+![4](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/446362b8-79a5-497d-b82c-142751c9146a)
+
+---
+- Tags are used to extend the properties of uml so you can add additional information to the specification of a model element, this allows you to specify keyword value pairs of a model where keywords are attributes tagged values are graphically displayed as strings enclosed by the curly braces.
+![5](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/9ff86375-3e93-4391-9705-6fb33187b51b)
+
+---
+- For example imagine a team that is responsible for assembling testing and deploying a system for them it is necessary to monitor the version and test results of the main subsystem and this is where tags come in handy.
+![6](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a1b332e2-7573-4bd4-b393-9cdd56396c32)
+
+---
+- Tags can also be useful to add properties to the model such as code generation, version control, configuration management and authorship.
+![7](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/c2b62393-8932-4653-9f13-560a03f90695)
+
+---
+- Constraints are properties used for semantics or conditions that should always be satisfied they allow us to expand the semantics of the uml building blocks by adding new protocols.
+- A constraint is displayed as a string enclosed by the square brackets next to the corresponding element.
+![8](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f818e9e7-a488-45e7-b0a6-9998b24bc08d)
+
+---
+- For example when developing a real-time system it is necessary to supplement the model with some necessary information such as response time for instance.
+- Constraints may be placed on attributes, derived attributes and associations.
+- They can also be attached to one or more model elements shown as a node.
+![9](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/1d2a3cff-e46e-4b11-b52b-588178a5448f)
+
+---
+- As an alternative to creating a new matter model you can also expand and modify the uml metamodel according to your requirements, in uml this is called a lightweight extension based on stereotypes and profiles.
+![10](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/76a7c8cb-ed30-4693-a44a-0abda155082d)
+
+---
+- A uml profile can be defined in one of the following ways creation of a new meta-model, extension and modification of the uml metamodel, extension of the uml meta model with language inherent mechanisms.
+- Uml 2.0 allows you to use arbitrary data structures for extended elements which means that wider and more accurate extensions of the model are now possible.
+- The profile mechanism is not a first class extension mechanism because it does not allow changing existing or creating new meta models profile only allows adaptation or customization of an existing meta model.
+- In uml 2.0 or above profiles can also be dynamically combined so that multiple profiles can be applied on the same model at the same time.
+![11](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4c578d16-81da-478e-957e-e2053d1ae7cf)
+
+---
+- A stereotype can extend from one or more meta classes such extension is depicted as an arrow with a continuou align and filled arrowhead that goes in the direction from the stereotype to the meta class.
+![12](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a2e56e5c-dff7-4ddc-9541-2766e38205be)
+
+---
+- Stereotypes can be presented in the form of text or graphics the normal class box can also be replaced by the icon.
+- For example people often use these three stereotype class representations to model the mvc software infrastructure.
+![13](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4eb4e539-14ca-4d91-aa2f-d8169662af74)
+
+---
+- To use stereotypes in a specific application you must first integrate a profile containing stereotypes, you do this with a dashed arrow, its open arrowhead is pointing away from the application package towards the profile.
+- This arrow is marked with a keyword apply a profile is applied to another package to makestereotypes in the profile available for this package.
+- This diagram shows the network telecommunications and software profiles that apply to the it company suite.
+![14](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/ff2b4f78-3eb9-4638-b7bd-2ef99089e693)
+---
+- In this diagram we define the ejb profile as a package the bean itself expands from the component metamodel as an abstract bean an abstract bean can be instantiated as an entity bean or session bean ejb has two types of remote and home interfaces ejb also contains a special kind of an artifact called a jar file for storing a collection of java code.
+![15](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/fe86f5f3-8209-4592-bd4f-0b16982e018c)
+---
