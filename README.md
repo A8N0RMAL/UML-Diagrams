@@ -1,4 +1,4 @@
-![13](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/784ce872-a60e-41e5-9fcf-7cd16395065e)![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b66b4e76-bc22-464e-873b-8eef5134c667)# UML-Diagrams
+# UML-Diagrams
 ## In this repo, I'll try to talk about UML diagrams
 ![UML Diagrams](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a0a50764-a982-4c36-99aa-434ebda5e81f)
 
