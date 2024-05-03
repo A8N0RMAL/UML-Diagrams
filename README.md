@@ -634,3 +634,122 @@ importance.
 - In this diagram we define the ejb profile as a package the bean itself expands from the component metamodel as an abstract bean an abstract bean can be instantiated as an entity bean or session bean ejb has two types of remote and home interfaces ejb also contains a special kind of an artifact called a jar file for storing a collection of java code.
 ![15](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/fe86f5f3-8209-4592-bd4f-0b16982e018c)
 ---
+### USE-CASE Diagram
+![Use Case Diagram](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a98a871c-a87a-49f3-824c-82cb5d061298)
+
+---
+- Use case diagrams are fairly simple they summarize some of the relationships between use cases, actors and systems.
+- But they don't show the order in which steps to achieve the goals of each use case are taken.
+- They usually contain only a few simple figures, therefore if you have more than 20 use cases you are probably using the diagram incorrectly.
+- There are many different uml diagrams that serve various purposes very often it is possible to describe the details of a system using other uml diagrams and link them together with use cases because use cases represent only the functional requirements of the system.
+![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/7d5d679e-69fd-400a-b199-d9ee962fdf3e)
+
+---
+- Other requirements such as business rules,  quality of service requirements and implementation restrictions must be presented separately again with othe uml diagrams.
+![2](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4625287c-11a0-4152-9373-4a632dc99e13)
+
+---
+- Use case diagrams are usually constructed at an early stage of development and are often used for the following purposes:
+1. To specify a system context.
+2. To capture system requirements.
+3. To validate system architecture.
+4. To drive implementation and generate test cases.
+- And usually all this is developed by analysts together with domain experts.
+![3](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/e4dce8fd-015e-43d4-b1dd-6a579de05c05)
+
+---
+- So what does the use case diagram consists of?
+- Actor: in a broad sense one who interacts with the system and in most cases one who creates a use case.
+- Actor is usually drawn as a little genderless humanoid with a name on it.
+![4](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a697c11f-da0b-4e29-b881-99f910e0f922)
+
+---
+- Actor plays a role in the business process quite similar to the concept of a user, but the user and this is important can play different roles.
+- For instance a professor can be a lecturer at the uni as well as a scientist in some kind of a research lab, so in this case the professor plays two roles in two different systems.
+![5](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/c1810b85-76b5-4427-b336-5a132abe9f4d)
+
+---
+- Actor triggers use cases in other words actors interaction with the system and how the system reacts to those interactions form the use case.
+- Actor also has some expectations from interactions with the system, if we expect one thing but get something completely different then the system function responsible for the use case may have been either improperly modeled or improperly implemented.
+![6](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/7e508805-3efd-4d50-b2e9-ad17a8e7d578)
+
+---
+- Use case: it is a system function or a process that can be either automatic or manual.
+![7](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/e0c65106-51a4-498b-8880-38a7167c74f5)
+
+---
+- The name is usually constructed from a combination of verb and a noun or phrases that guide to do something.
+- Each actor must be associated with a use case while some use cases might not be associated with actors.
+- Use cases determine the expected behavior that is what should happen but they don't describe how to make this happen.
+- Use cases can be indicated in text or graphic form.
+- For example in the form of a use case diagram.
+- The main point of modeling the use cases is to help us to design the system from the perspective of the end user by indicating all possible actions of the system that may be externally visible.
+![8](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/32841078-deea-49e2-acd1-fe2360bc473e)
+
+---
+- Communication link: actors can be connected with use cases via associations indicating that the actor and the use case communicate with each other through messages.
+- This is graphically shown with a solid line.
+![9](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/d24fbf1b-e191-4029-97d1-967ba21266f3)
+
+---
+- System boundaries: for large and complex systems each module may be the boundary of the system but potentially it may be the entire system.
+- For instance if we'll have a look at an ERP system each one of the modules such as personnel payroll or accounting can form a system boundary for use cases specific to each of these business functions, the entire system can span through all of these modules displaying the overall boundary of the system.
+![10](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/88c5f7c5-2e2e-4535-8641-a2128935ae6b)
+
+---
+- Use cases form various kinds of relationships.
+- The duty of defining the relationships between two use cases falls on the shoulders of software analysts of the use case diagram.
+- Reusing an existing use case with other types of relationships reduces the overall effort required to develop a system.
+![11](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/360beb61-80cd-493c-9267-eefc2a2a1bc7)
+
+---
+- Let's look at the main relationships between use cases.
+- Use case diagram illustrates a set of use cases for the system, an example subjects and relationships between subjects and use cases.
+![12](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/0e42d4ff-0b9a-4650-8f63-8fdfadc9785c)
+
+---
+- Extends: indicates that for example use case invalid password may include under the conditions specified in the extension,  the behavior specified in the base use case login into account.
+- Imagine that we have a use case that describes the interaction of an actor with an account for example the possibility of a login,  the basic use case is extended by two other use cases for example the already mentioned invalid password in which case the system will react in one way and on the contrary correct password in which case the system will most likely react differently.
+- Extensions are important because they show additional functionality or system behavior.
+- This type of relationship is used to include optional behavior of the use case that extends the base use case.
+![13](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/2ebe3c0b-1d1d-4060-b889-20eb9e73530a)
+
+---
+- In our example the student requests a schedule and this requires the extension of the base use case request schedule with the use case search.
+![14](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/b75255d5-eecb-4719-9fb6-775ed9e9776e)
+
+---
+- When one use case is shown using the functionality of another use case the relationship between them is indicated by their include stereotype.
+- This type of relationship means that an instance of the base use case will include the behavior as specified in the child use case and it is indicated by a dashed arrow with its tip pointing to the child use case.
+![15](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/e8e5c9e2-9230-494f-a1ab-b74f2ab1d290)
+
+---
+- Include adds additional functionality not specified in the base use case and is used to add general behavior from the included use case to the basis case in order to support the re-usage of the common behavior.
+![16](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/a9ac4bb8-3f3b-448f-b285-2a07ec15b306)
+
+---
+- Generalization or inheritance: this is a parent-child relationship between use cases where the child use case is an extension of its parent use case generalization is depicted by a solid line with a triangular arrowhead pointing at the parent use case.
+![17](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/aa342662-e5a4-48e7-b6ee-eeece26506d0)
+![18](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/e4a60206-2694-4edf-97fb-4561585b72d6)
+![19](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/fd79f90b-0ba4-4f10-aeff-f46a8465567c)
+
+---
+- In this type of relationship the child use case inherits the behavior and semantic component from the parent use case.
+- A child use case may add or override the behavior of its parents.
+- In this example the parent use case search has two children search by lecturer and search by date.
+![20](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/948cb3cb-e728-4fdf-9c96-d3a00149b889)
+
+---
+- This use case diagram depicts a car sale system and you can probably notice that even such a complicated system can be described with just 10 use cases.
+- Here you can observe extensions, inclusions and associations that connect actors with use cases.
+![21](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/3a750be7-1d39-4e88-87da-ad70d46be2a5)
+
+---
+- Now a couple of tips to model a use case diagram more efficiently in case you will decide to do so in your project:
+1. Always structure and organize a use case diagram from the perspective of actors.
+2. Use cases should start off simple and at the highest view possible only then we can move towards refinement and high digitalization.
+3. Use case diagrams are based on functionality and therefore should focus on what and not on the how.
+![22](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/dcfb2647-f370-4250-b499-b86de48ac127)
+
+---
+### ACTIVITY Diagram
