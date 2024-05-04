@@ -753,3 +753,102 @@ importance.
 
 ---
 ### ACTIVITY Diagram
+- Activity diagram is another important uml behavioral diagram used to describe the dynamic aspects of a system activity diagram is essentially an extended version of a flowchart that models the transition from one activity to another and it shows how system activities are coordinated to provide a service that can be at a different level of abstraction.
+![UML Activity Diagram](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f6d85a4b-8ae1-4534-a07c-3c518bd6a92d)
+
+---
+- first of all let's go over the basic notation of the elements in the diagram and move on to the examples.
+![1](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/cdf3f8af-716c-4948-bf43-335429f1b05d)
+
+---
+- initial node it starts the flow when the activity is called from the outside.
+![2](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/19d6e4a7-5698-4494-961d-0d83c3d733b5)
+
+---
+- control flow it shows the sequence of execution of flow.
+![3](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/694c2472-ba70-4ede-b9e5-22135303dd5d)
+
+---
+- action a task to be performed.
+![4](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/835b76fc-de74-4316-860a-4b714a37c40c)
+
+---
+- decision node it represents a test condition to ensure that the control flow or object flow only goes down one path.
+![5](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/5f3ce661-dd49-4672-b588-e04710dbce22)
+
+---
+- merge node it merges the various threads that were created after the decision node.
+![6](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/f30e348a-69d8-4ca7-a75a-bfbe648a7303)
+
+---
+- fork node splits behavior into a set of parallel or concurrent flows of activities.
+![7](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/d3b2fc12-71aa-4327-8506-ee2a4571c424)
+
+---
+- join node it combines several parallel flows usually separated by a fork node.
+![8](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/3ad3aaad-b66b-452b-83d3-16e127832b72)
+
+---
+- object represents an object in a thread that is being acted upon this is an optional element of the diagram but in some cases it is necessary to show the object initiating the execution of activities or being created as a result of some early initiation.
+![9](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/23a121c3-5a97-4b36-9320-66b818a14d45)
+
+---
+- activity final note it terminates all flows in an activity.
+![10](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/7e3dd2ff-77f5-4000-8c55-0728213db649)
+
+---
+- swim lane a way to group activities performed by the same actor on an activity diagram or simply group them in a single thread.
+![11](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/6192f867-d2d5-402c-9619-9455cabdd5e8)
+
+---
+- the following  steps of the activity diagram describe the workflow for creating a document in a text editor.
+![12](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/4b3cbda9-ffa7-4817-af00-93203ae4aae9)
+
+---
+- open the text editor, create a document, save the document, enter the text.
+- if graphics are necessary, import them into the document.
+- if a table or a spreadsheet is necessary, create the required table or spreadsheet and import it into the document.
+- save the document, print the document and exit the text editor.
+- seems pretty logical and simple.
+![13](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/1c80cb4a-d654-4531-a47a-d0a3893054ec)
+
+---
+- now let's imagine that we were given a task to simulate the order processing workflow using an activity diagram.
+![14](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/2581dfc4-3dac-431d-8ec3-c8b176bdc0a8)
+
+---
+- the description of the process is as follows:
+- once the order is received the activities split into two parallel flows, one fulfills and sends the order and the other process the invoices on the order processing side the delivery method is determined depending on the conditions of the order and transformed into action overnight delivery or regular delivery
+- After sending the invoice for the goods the payment process side is going to receive payment, hopefully finally to parallel flows join and finalize the order processing.
+![15](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/6ede358a-4c5b-4a6a-994f-8bf5accbcbfb)
+
+---
+- Another example is the process for student enrolment in programming courses.
+![16](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/448fa300-e4dd-40c1-a882-d5cf51a3acf5)
+
+---
+- A student decides that he or she wants to become a super coding guru goes online discovers some online courses and commits to enroll.
+![17](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/75e58383-e1f2-439c-a4c2-60a6bf29182e)
+
+---
+- Then fills in the registration form on the company's website if the form is filled in correctly then the student is registered if not the student is notified to correct the errors and try again after that the student can check out our free introductory course after completing or skipping it the student can start our full-fledged course straight away finally the student needs to pay for the course success.
+![18](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/fae1f3e1-2053-4d76-bd58-99677904e1c3)
+
+---
+- But there is another interesting way to add clarity to the diagram i suspect that the person who has invented the first activity diagram was probably a passionate swimmer because he or she introduced the concept of a swim lane as a part of the diagram.
+![19](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/bfeea01a-4510-4bee-a35d-969636395bea)
+
+---
+- Swimlane is a way of grouping activities performed by the same actor in a single thread.
+- let's have a look at the activity diagram that describes the business process of onboarding a new client.
+![20](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/3342d204-c468-4dd1-9229-63a66f7cfd60)
+
+---
+- First of all we reach out to our potential client and arrange a meeting depending on whether there will be a meeting and whether i will be in our company's office or in the client's office we are preparing either a conference room or just take our laptop with us but regardless of where the meeting is going to take place we know that the client wants to meet with us after the meeting we'll normally send a follow-up letter to the client we just had a meeting with decision point if we have a deal then we prepare the contract and we also add the comment that there is another a separate activity diagram that reflects this process and needs to be followed we send the contract to the client and we get to the point where the process finalizes by the way we come here even if we didn't get the deal.
+![21](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/480d963f-8043-46fc-ac4e-43cf36cd1701)
+
+---
+- And here is the schema of the same process but this time we're using swimlane you can see that now it looks much more accurate because this time the process is divided into areas of responsibility for the salesperson who organizes the appointment as well as writes a follow-up letter to the client and the consultant who prepares the presentation for the client holds a meeting and crafts and sends the contract and a secretary whose task includes preparing the conference room in case the meeting takes place in our company's own office.
+![22](https://github.com/A8N0RMAL/UML-Diagrams/assets/119806250/90628558-1b25-4d34-a77e-95e39dbc95af)
+
+---
